@@ -1,0 +1,5 @@
+package com.da.coding.servlet3;
+
+public class MyWebInitializer {
+
+}

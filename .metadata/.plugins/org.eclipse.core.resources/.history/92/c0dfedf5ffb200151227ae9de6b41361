@@ -1,0 +1,5 @@
+package com.da.coding.web;
+
+public class WelcomeController {
+
+}

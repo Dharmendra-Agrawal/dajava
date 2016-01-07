@@ -1,0 +1,5 @@
+package com.da.coding.creational.abstractfactory;
+
+public abstract class ComputerFactory {
+	
+}

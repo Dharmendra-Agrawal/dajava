@@ -1,0 +1,14 @@
+package com.da.coding.creational.prototype;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ProtoTypeTest {
+	public static void main(String[] args) {
+		Map<String, String> configs= new HashMap<String, String>();
+		configs.put("db_url", "jdbc:mysql:mem:prototype1");
+		configs.put("user_name", "sa");
+		configs.put("password", "12345");
+		configs.put("max_connection", "10");
+	}
+}

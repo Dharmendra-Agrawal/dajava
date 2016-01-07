@@ -1,0 +1,8 @@
+package com.da.coding.creational.singleton;
+/*
+ * This is similar to eager singleton
+ * only advantage is we can have Exception Handling
+ * */
+public class StaticBlockSingleton {
+
+}

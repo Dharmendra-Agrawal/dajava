@@ -1,0 +1,19 @@
+package com.da.coding.creational.singleton;
+
+import javax.management.RuntimeErrorException;
+
+/*
+ * This is similar to eager singleton
+ * only advantage is we can have Exception Handling
+ * */
+public class StaticBlockSingleton {
+	private static StaticBlockSingleton SINGLETON;
+	
+	static{
+		try{
+			SINGLETON= new StaticBlockSingleton();
+		}catch(Error e){
+			throw new RuntimeErrorException(e, "Error in initializing StaticBlockSingleton");
+		}
+	}
+}

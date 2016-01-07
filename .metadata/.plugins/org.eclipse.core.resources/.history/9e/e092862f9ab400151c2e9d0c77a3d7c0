@@ -1,0 +1,6 @@
+package com.da.coding.creational.abstractfactory;
+
+public class ManufectureTest {
+	public static void main(String[] args) {
+	}
+}

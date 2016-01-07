@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context allowLinking="${context.allowLinking}" antiJARLocking="${context.antiJarLocking}" cacheMaxSize="${context.cacheMaxSize}" cacheObjectMaxSize="${context.cacheObjectMaxSize}" cacheTTL="${context.cacheTTL}" crossContext="${context.crossContext}" fireRequestListenersOnForwards="true" reloadable="${context.reloadable}" unloadDelay="${context.unloadDelay}" useHttpOnly="${context.useHttpOnly}">
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <!--
+    <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
+    -->
+</Context>

@@ -1,0 +1,8 @@
+package com.da.coding.creational.abstractfactory;
+
+public class CarInstanceTest {
+	public static void main(String[] args) {
+		HatchBackFactory hatchBackFactory= new HatchBackFactory();
+		Car car1 = CarFactory.getInstance(hatchBackFactory, "Hyundai");
+	}
+}

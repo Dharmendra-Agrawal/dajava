@@ -1,0 +1,15 @@
+package com.da.coding.builder;
+
+public class Computer {
+	//Mandatory fields
+	private String systemName;
+	private String modelNo;
+	private Integer ramSize;
+	
+	//optional fields
+	private boolean isGraphicsCard;
+	private boolean isOctaCore;
+	
+	
+	
+}

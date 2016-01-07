@@ -1,0 +1,15 @@
+package com.da.coding.creational.singleton;
+
+public class SerializableSingleton {
+	private SerializableSingleton(){
+		
+	}
+	
+	public static class SerializableSingletonHelper{
+		private static final SerializableSingleton SINGLETON= new SerializableSingleton();
+	}
+	
+	public SerializableSingleton getInstance(){
+		return SerializableSingletonHelper.SINGLETON;
+	}
+}

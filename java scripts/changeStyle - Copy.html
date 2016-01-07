@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title> Java script example </title>
+<head>
+</head>
+<body>
+	<p id="demo">java script can change html content</p>
+	<button onclick=changeStyle()>Change Style</button>
+	<script>
+		function changeStyle(){
+			var data= document.getElementById("demo");
+			data.style.fontSize="55px";
+			data.style.color="red";
+		}
+	</script>
+</body>
+</html>

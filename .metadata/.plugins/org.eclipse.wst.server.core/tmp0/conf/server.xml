@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Server port="8005" shutdown="SHUTDOWN">
+    <Listener className="org.apache.tomee.catalina.ServerListener"/>
+    <Listener className="org.apache.catalina.security.SecurityListener"/>
+    <Listener SSLEngine="on" className="org.apache.catalina.core.AprLifecycleListener"/>
+    <Listener className="org.apache.catalina.core.JasperListener"/>
+    <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener"/>
+    <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"/>
+    <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener"/>
+
+    <GlobalNamingResources>
+        <Resource auth="Container" description="User database that can be updated and saved" factory="org.apache.catalina.users.MemoryUserDatabaseFactory" name="UserDatabase" pathname="conf/tomcat-users.xml" type="org.apache.catalina.UserDatabase"/>
+    </GlobalNamingResources>
+
+    <Service name="Catalina">
+        <Executor maxThreads="75" minSpareThreads="10" name="tomcatThreadPool" namePrefix="catalina-exec-" prestartminSpareThreads="true"/>
+
+        <Connector compressableMimeType="text/html,text/xml,application/xml,application/json,text/json,text/css,image/png,image/jpg,image/gif" compression="on" executor="tomcatThreadPool" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
+
+        <Connector port="8009" protocol="AJP/1.3" redirectPort="8443"/>
+
+        <Engine defaultHost="localhost" name="Catalina">
+            <Realm className="org.apache.catalina.realm.LockOutRealm">
+                <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
+            </Realm>
+
+            <Host appBase="webapps" autoDeploy="true" deployOnStartup="true" name="localhost" undeployOldVersions="true" unpackWARs="true">
+
+                <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
+
+            <Context docBase="C:\personal\Personal Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\personal\Personal Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\springmvc" path="/springmvc" reloadable="true" source="org.eclipse.jst.jee.server:springmvc"/></Host>
+        </Engine>
+    </Service>
+</Server>

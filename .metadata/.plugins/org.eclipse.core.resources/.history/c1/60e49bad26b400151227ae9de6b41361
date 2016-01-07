@@ -1,0 +1,20 @@
+package com.da.coding.creational.singleton;
+
+public class DoubleCheckThreadSafeSingleton {
+	private static DoubleCheckThreadSafeSingleton singleton;
+	
+	private DoubleCheckThreadSafeSingleton(){
+		
+	}
+	
+	public static DoubleCheckThreadSafeSingleton getInstance(){
+		if(singleton==null){
+			synchronized (DoubleCheckThreadSafeSingleton.class) {
+				if(singleton==null)
+					singleton= new DoubleCheckThreadSafeSingleton();
+			}
+		}
+		
+		return singleton;
+	}
+}

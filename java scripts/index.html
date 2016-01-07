@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title> Java script example </title>
+<head>
+</head>
+<body>
+	<p id="demo">java script can change html content</p>
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Hello Java Script'"> click me </button>
+	<img id="myImage" onclick="changeImage()" src="Desert.jpg" width="100" height="150">Click on image to change it</img>
+	<script>
+		function changeImage(){
+			var image= document.getElementById("myImage");
+			if(image.src.match("Desert")){
+				image.src="Jellyfish.jpg";
+			}else{
+				image.src="Desert.jpg";
+			}
+			document.getElementById("demo").style.font("25px");
+		}
+	</script>
+</body>
+</html>

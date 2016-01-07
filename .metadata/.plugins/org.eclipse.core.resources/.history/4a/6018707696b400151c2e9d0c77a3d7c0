@@ -1,0 +1,7 @@
+package com.da.coding.creational.factory;
+
+public class ComputerFactory {
+	public static Computer getInstance(Class cls, String modelNo, String brand, Integer ramSize ){
+		
+	}
+}

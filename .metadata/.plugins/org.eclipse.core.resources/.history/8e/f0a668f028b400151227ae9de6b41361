@@ -1,0 +1,8 @@
+package com.da.coding.creational.singleton;
+
+public class ReflectionBreakingSingleton {
+	public void breakSingleton(){
+		EagerSingleton singleton1= EagerSingleton.getInstance();
+		EagerSingleton singleton2=null;
+	}
+}

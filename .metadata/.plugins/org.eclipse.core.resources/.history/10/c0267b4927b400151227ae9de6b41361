@@ -1,0 +1,9 @@
+package com.da.coding.creational.singleton;
+
+/*
+ * Most widely used way to create singleton
+ * it does not require any synchronization
+ * */
+public class BillPughSingleton {
+
+}

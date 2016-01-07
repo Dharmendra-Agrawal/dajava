@@ -1,0 +1,21 @@
+package com.da.coding.creational.singleton;
+
+import java.io.Serializable;
+
+public class SerializableSingleton implements Serializable{
+	private SerializableSingleton(){
+		
+	}
+	
+	public static class SerializableSingletonHelper{
+		private static final SerializableSingleton SINGLETON= new SerializableSingleton();
+	}
+	
+	public SerializableSingleton getInstance(){
+		return SerializableSingletonHelper.SINGLETON;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

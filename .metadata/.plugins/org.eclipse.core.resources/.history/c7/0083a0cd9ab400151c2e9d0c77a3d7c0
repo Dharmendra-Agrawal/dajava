@@ -1,0 +1,10 @@
+package com.da.coding.creational.abstractfactory;
+
+public class SUVFactory extends CarFactory{
+
+	@Override
+	public Car createInstance(String brand) {
+		return new SUV(brand);
+	}
+
+}

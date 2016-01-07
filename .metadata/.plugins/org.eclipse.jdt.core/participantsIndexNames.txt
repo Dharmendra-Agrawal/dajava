@@ -1,0 +1,9 @@
+INDEX VERSION 1.127
+C:\personal\Personal Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1347517484.index
+\spring4-mvc-gradle-annotation-hello-world-master\src\main\java
+C:\personal\Personal Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3490526498.index
+\springmvc\src\main\java
+C:\personal\Personal Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4265726274.index
+\Spark\src\main\resources
+C:\personal\Personal Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1187126239.index
+\springmvc\src\main\java

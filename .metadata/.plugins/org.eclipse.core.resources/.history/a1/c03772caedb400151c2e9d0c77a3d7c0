@@ -1,0 +1,19 @@
+package com.da.coding.creational.prototype;
+
+import java.util.List;
+
+public class DBConnection<T> {
+	List<T> configurations;
+
+	public List<T> getConfigurations() {
+		return configurations;
+	}
+
+	public void setConfigurations(List<T> configurations) {
+		this.configurations = configurations;
+	}
+	
+	public void loadConfig(List<T> configs){
+		configurations= configs;
+	}
+}

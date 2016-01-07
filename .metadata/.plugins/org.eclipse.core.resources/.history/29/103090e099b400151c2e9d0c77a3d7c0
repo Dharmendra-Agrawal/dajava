@@ -1,0 +1,10 @@
+package com.da.coding.creational.abstractfactory;
+
+public class HatchBackFactory extends CarFactory{
+
+	@Override
+	public Car createInstance(String brand) {
+		return new Hatch;
+	}
+
+}

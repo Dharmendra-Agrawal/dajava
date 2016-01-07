@@ -1,0 +1,62 @@
+package com.da.coding.builder;
+
+public class Computer {
+	//Mandatory fields
+	private String systemName;
+	private String modelNo;
+	private Integer ramSize;
+	
+	//optional fields
+	private boolean isGraphicsCard;
+	private boolean isOctaCore;
+	public String getSystemName() {
+		return systemName;
+	}
+	public String getModelNo() {
+		return modelNo;
+	}
+	public Integer getRamSize() {
+		return ramSize;
+	}
+	public boolean isGraphicsCard() {
+		return isGraphicsCard;
+	}
+	public boolean isOctaCore() {
+		return isOctaCore;
+	}
+	
+	public static class ComputerBuilder{
+		//Mandatory fields
+		private String systemName;
+		private String modelNo;
+		private Integer ramSize;
+		
+		//optional fields
+		private boolean isGraphicsCard;
+		private boolean isOctaCore;
+		
+		public ComputerBuilder(String systemName, String modelNo,
+				Integer ramSize) {
+			super();
+			this.systemName = systemName;
+			this.modelNo = modelNo;
+			this.ramSize = ramSize;
+		}
+
+		public void setGraphicsCard(boolean isGraphicsCard) {
+			this.isGraphicsCard = isGraphicsCard;
+		}
+
+		public void setOctaCore(boolean isOctaCore) {
+			this.isOctaCore = isOctaCore;
+		}
+		
+		public Computer build(){
+			ComputerBuilder computerBuilder= new ComputerBuilder(systemName, modelNo, ramSize)
+			return new Computer()
+		}
+		
+	}
+	
+	
+}
