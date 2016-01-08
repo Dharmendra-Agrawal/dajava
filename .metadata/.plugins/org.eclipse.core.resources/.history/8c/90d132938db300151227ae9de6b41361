@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="spring4-mvc-gradle-annotation-hello-world-master">
-        <property name="context-root" value="springmvc"/>
-        <property name="java-output-path" value="/spring4-mvc-gradle-annotation-hello-world-master/target/classes"/>
-    </wb-module>
-</project-modules>

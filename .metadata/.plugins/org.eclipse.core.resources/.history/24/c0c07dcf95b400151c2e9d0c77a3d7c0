@@ -1,7 +1,0 @@
-package com.da.coding.creational.factory;
-
-public class Computer {
-	private String modelNo;
-	private String brand;
-	private Integer ramSize;
-}

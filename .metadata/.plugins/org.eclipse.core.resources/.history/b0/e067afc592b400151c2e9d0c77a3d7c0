@@ -1,9 +1,0 @@
-package com.da.coding.creational.singleton;
-
-public enum SINGLETON {
-	INSTANCE;
-	
-	public void doSomeThing(){
-		
-	}
-}

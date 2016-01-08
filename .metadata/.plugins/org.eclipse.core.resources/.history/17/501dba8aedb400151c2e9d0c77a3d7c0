@@ -1,7 +1,0 @@
-package com.da.coding.creational.prototype;
-
-import java.util.List;
-
-public class DBConnection {
-	List<String> configurations;
-}
